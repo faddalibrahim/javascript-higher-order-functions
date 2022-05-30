@@ -1,8 +1,7 @@
 function reduce(array, combine, start){
-    let accumulator = start ?? 0;
+    let accumulator = start ?? array[0];
     for(let element of array){
         accumulator = combine(accumulator, element)
-        //accumulator = accumulator (+*/%) element
     }
     return accumulator
 }

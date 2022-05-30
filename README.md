@@ -1,5 +1,4 @@
-In this repository, I reacreate the Higher Order functions in Javascript's Array Prototype.
+# Javascript's Higher Order Functions
 
-The codes for **Filter**, **Map** and **Reduce** are already given in Eloquent Javascript. 
+Find detailed explanations in this article
 
-Based on those examples, I recreate the rest.

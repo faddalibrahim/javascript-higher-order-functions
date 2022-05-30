@@ -1,9 +1,11 @@
 function map(array, callback){
-    let mapped = [];
+    let image = [];
+
     for(let element of array){
-        mapped.push(callback(element))
+        image.push(callback(element))
     }
-    return mapped;
+
+    return image;
 }
 
 let results = map([1,2,3,4,5,6,7], element => element * 2);

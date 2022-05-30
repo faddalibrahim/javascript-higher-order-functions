@@ -1,10 +1,10 @@
 function filter(array, callback){
     let passed = [];
+
     for(let element of array){
-        if(callback(element)){
-            passed.push(element)
-        }
+        if(callback(element)) passed.push(element)
     }
+
     return passed;
 }
 

@@ -1,8 +1,10 @@
 function reduce(array, combine, start){
     let accumulator = start ?? array[0];
+
     for(let element of array){
         accumulator = combine(accumulator, element)
     }
+    
     return accumulator
 }
 

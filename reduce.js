@@ -1,10 +1,18 @@
 function reduce(array, combine, start){
-    let accumulator = start ?? array[0];
+    if(!array.length) throw new Error("input array is empty");
 
-    for(let element of array){
-        accumulator = combine(accumulator, element)
+    let accumulator = start;
+    let i = 0;
+
+    if(start == null || start == undefined){
+        accumulator = array[0];
+        i++;
+    }   
+
+    for(let j = i; j < array.length; j++){
+        accumulator = combine(accumulator, array[j])
     }
-    
+
     return accumulator
 }
 
